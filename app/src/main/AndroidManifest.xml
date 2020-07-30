@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ugtttt.tictactoe" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1627667019506430~1093791602"/>
+
+        <activity android:name="com.ugtttt.tictactoe.MultiPlayerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullScreenTheme" >
+        </activity>
+        <activity
+            android:name="com.ugtttt.tictactoe.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ugtttt.tictactoe.GameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name="com.ugtttt.tictactoe.MenuActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name="com.ugtttt.tictactoe.AboutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name="com.ugtttt.tictactoe.OnlineLoginActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name="com.ugtttt.tictactoe.OnlineGameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullScreenTheme" />
+
+
+
+    </application>
+
+</manifest>

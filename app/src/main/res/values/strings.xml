@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <string name="single_player">Single Player</string>
+    <string name="multi_player">Multi Player</string>
+    <string name="online">Online</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="back">Back</string>
+    <string name="intrestial_add">ca-app-pub-1627667019506430/1119720066</string>
+
+    <string name="label_player_turn">Turn</string>
+    <string name="turn_human">Its yours</string>
+    <string name="turn_computer">Computer</string>
+
+    <string name="about_note">
+        This game is made by UGT\n
+       Developer:  Umashankar Pandey\n
+        +91-9011929187
+        U can mail on :
+        ugt.tech.co@gmail.com\n
+        //*this is the 1st app
+           so if u find any bug
+           or error u can
+           contact me*/\n
+        Thank You\n
+        Keep Enjoying\n
+    </string>
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woods"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal|center_vertical"
+    tools:context=".MultiPlayerActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="@dimen/size_game_board"
+        android:layout_height="@dimen/size_game_board"
+        android:background="@drawable/board_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/iv_11"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/iv_12"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/iv_13"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/iv_21"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/iv_22"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/iv_23"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/iv_31"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/iv_32"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/iv_33"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+        </TableRow>
+
+    </TableLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_singleplayer"
+        android:layout_width="167dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="BacktoMainmenu"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#b80009"
+        fancy:fb_focusColor="#db232f"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="@string/back"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textFont="fonts/zorque.ttf"
+        fancy:fb_textSize="@dimen/size_menu_button"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvPlayer1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="159dp"
+        android:text="Player 1"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tvPlayer2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="159dp"
+        android:text="Player 2"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/tableLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
